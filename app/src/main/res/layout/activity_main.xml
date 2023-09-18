@@ -7,6 +7,16 @@
     tools:context=".MainActivity">
 
     <Button
+        android:id="@+id/btnIMC2"
+        android:layout_width="163dp"
+        android:layout_height="79dp"
+        android:layout_marginBottom="280dp"
+        android:text="bhaskara"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
         android:id="@+id/btnSairIMC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -35,10 +45,10 @@
         android:layout_width="137dp"
         android:layout_height="73dp"
         android:text="IMC"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnIMC2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnCalculadora"
-        app:layout_constraintVertical_bias="0.141" />
+        app:layout_constraintVertical_bias="0.493" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
