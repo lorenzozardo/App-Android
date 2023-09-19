@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnIMC, btnCalculadora, btnSairIMC;
+    Button btnIMC, btnCalculadora, btnSairIMC, btnBhaskaraPrincipal, btnNomeCompleto;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +40,24 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent Calculadora = new Intent(getApplicationContext(),com.example.imc.MainActivity3.class);
                 startActivity(Calculadora);
+            }
+        });
+
+        btnBhaskaraPrincipal = findViewById(R.id.btnBhaskaraPrincipal);
+        btnBhaskaraPrincipal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent Bhaskara = new Intent(getApplicationContext(), com.example.imc.MainActivity4.class);
+                startActivity(Bhaskara);
+            }
+        });
+
+        btnNomeCompleto = findViewById(R.id.btnNomeCompleto);
+        btnNomeCompleto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent NomeCompleto = new Intent(getApplicationContext(), com.example.imc.MainActivity5.class);
+                startActivity(NomeCompleto);
             }
         });
     }

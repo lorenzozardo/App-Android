@@ -7,11 +7,11 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/btnIMC2"
-        android:layout_width="163dp"
-        android:layout_height="79dp"
-        android:layout_marginBottom="280dp"
-        android:text="bhaskara"
+        android:id="@+id/btnNomeCompleto"
+        android:layout_width="199dp"
+        android:layout_height="88dp"
+        android:layout_marginBottom="232dp"
+        android:text="Nome Completo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -33,7 +33,7 @@
         android:id="@+id/btnCalculadora"
         android:layout_width="172dp"
         android:layout_height="80dp"
-        android:layout_marginTop="148dp"
+        android:layout_marginTop="72dp"
         android:text="Calculadora"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -41,14 +41,24 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+        android:id="@+id/btnBhaskaraPrincipal"
+        android:layout_width="163dp"
+        android:layout_height="79dp"
+        android:layout_marginBottom="352dp"
+        android:text="bhaskara"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
         android:id="@+id/btnIMC"
         android:layout_width="137dp"
         android:layout_height="73dp"
         android:text="IMC"
-        app:layout_constraintBottom_toTopOf="@+id/btnIMC2"
+        app:layout_constraintBottom_toTopOf="@+id/btnBhaskaraPrincipal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnCalculadora"
-        app:layout_constraintVertical_bias="0.493" />
+        app:layout_constraintVertical_bias="0.46" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
